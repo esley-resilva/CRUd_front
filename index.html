@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Clientes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Gerenciamento de Clientes</h1>
+        <div>
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="nomeGato" placeholder="Nome do Gato">
+            <input type="date" id="dataNascimento" placeholder="Data de Nascimento">
+            <button onclick="createCliente()">Criar</button>
+        </div>
+        <div>
+            <input type="text" id="search" placeholder="Buscar por nome">
+            <button onclick="searchClientes()">Buscar</button>
+        </div>
+        <div id="clientes"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
